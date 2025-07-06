@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxGadgets - Premium Phones watches & Bluetooth </title>
+   
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <h1>LuxGadgets</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#phones">Phones</a></li>
+                    <li><a href="#watches">Watches</a></li>
+                    <li><a href="#Bluetooth">Bluetooth</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="{{ url_for('feedback') }}">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+  <div class="container">
+    <h2> Premium Phones Watches & Bluetooth</h2>
+    <p>Style meets technology - Discover the best gadgets here.</p>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="#items" class="btn">contect me</a>
+    </div>
+  </div>
+</section>
+
+    <!-- Products -->
+    <section class="products" id="phones">
+        <h3>Smartphones</h3>
+        <div class="container product-grid">
+            <div class="product-card">
+                <img src="static/images/iphone_16.webp" alt="iPhone" height="100" width="100">
+                <h4>iPhone 16 Pro</h4>
+                <p>$100,000</p>
+            </div>
+            <div class="product-card">
+                <img src="static/images/galaxy_s24.webp" alt="Samsung" height="100" width="100">
+                <h4>Samsung Galaxy S24</h4>
+                <p>$150,000</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="watches">
+        <h3>Smartwatches</h3>
+        <div class="container product-grid">
+            <div class="product-card">
+                <img src="static/images/apple_watch.webp" alt="Apple Watch">
+                <h4>Apple Watch </h4>
+                <p>$5000</p>
+            </div>
+            <div class="product-card">
+                <img src="static/images/apple_watch2.webp" alt="Apple Watch">
+                <h4>Apple Watch </h4>
+                <p>$2000</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="products" id="Bluetooth">
+        <h3>Smartbluetooth</h3>
+        <div class="container product-grid">
+            <div class="product-card">
+                <img src="static/images/apple_blootuth.jpeg" alt="Apple Bluetooth">
+                <h4>Apple Bluetooth </h4>
+                <p>$2500</p>
+            </div>
+            <div class="product-card">
+                <img src="static/images/blootuth9.jpeg" alt="Apple Bluetooth">
+                <h4>Apple bluetoothes 9</h4>
+                <p>$3000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about" style="padding: 40px 0; text-align: center;">
+        <h3>About Us</h3>
+        <img src="static/images/logo.jpeg" alt="About Image" style="display: block; margin: 20px auto; width: 300px;">
+           <p style="max-width: 100%; height: auto; border-radius: 16px; margin: 10px 0;">
+        <p style="max-width: 800px; margin: 0 auto; font-size: 15px; line-height: 1.6;">
+            At LuxGadgets, we are passionate about connecting you with the latest and most innovative technology.
+            From flagship smartphones to premium smartwatches, we handpick devices that combine cutting-edge
+            performance with elegant design. Our mission is to bring you a luxurious tech experience that complements
+            your lifestyle.
+        </p>
+        <p style="max-width: 800px; margin: 20px auto 0; font-size: 16px; line-height: 1.6;">
+            We believe that technology should not only be powerful, but also accessible and stylish.
+            That's why we focus on products that deliver top-tier features, exceptional build quality, and unmatched
+            customer satisfaction.
+            Whether you're a tech enthusiast, a professional on the go, or someone who just loves sleek gadgets —
+            LuxGadgets has something for you.
+        </p>
+        <p style="max-width: 800px; margin: 20px auto 0; font-size: 16px; line-height: 1.6;">
+            Experience fast shipping, dependable customer service, and exclusive deals, all in one place.
+            Your next upgrade starts here.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h3>Contact Us</h3>
+        <p>We'd love to hear from you! Fill out the form below or reach us directly at contact@luxgadgets.com.</p>
+        <div style="max-width: 600px; margin: 30px auto;">
+            <form style="display: flex; flex-direction: column; gap: 15px;">
+                <input type="text" placeholder="Your Name" required
+                    style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
+                <input type="email" placeholder="Your Email" required
+                    style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
+                <textarea placeholder="Your Message" rows="5" required
+                    style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                <button type="submit" class="btn" style="width: fit-content;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LuxGadgets. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
